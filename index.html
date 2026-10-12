@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сварщик — металлоконструкции и сварочные работы</title>
+  <meta name="description" content="Изготовление и ремонт металлоконструкций, сварочные работы любой сложности.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Oswald:wght@500;600;700&family=Rubik:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="season-fx" id="seasonFx" aria-hidden="true"></div>
+
+ 
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Сварщик — на главную">
+        <svg class="logo__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M10 26c0-9 6-16 14-16s14 7 14 16v8a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4v-8Z" />
+          <path d="M14 22h20v8a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3v-8Z" />
+          <path d="M18 10c1-3 4-5 6-5s5 2 6 5" />
+        </svg>
+        <span class="logo__text">
+          <strong>Сварщик Краснодар</strong>
+          <small>Металл. Надёжность. Результат.</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#top" class="is-active">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#about">О мастере</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="https://wa.me/qr/EB3O5S47B26BP1" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--small header__cta">
+        <svg class="header__cta-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 6.584 6.584c0 3.626-2.957 6.584-6.587 6.584zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.142-.43.048-.197-.099-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+        Написать / WhatsApp
+      </a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+   
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker">Сварочные работы и изделия из металла</p>
+          <h1 class="hero__title">Надёжные <span>металлические</span> конструкции</h1>
+          <p class="hero__text">Изготавливаю и ремонтирую металлические конструкции, выполняю сварочные работы любой
+            сложности.</p>
+          <div class="hero__actions">
+            <a href="#contacts" class="btn btn--primary">Обсудить заказ <span aria-hidden="true">→</span></a>
+            <div class="hero__reply">
+              <span>Быстрый ответ<br>в мессенджерах</span>
+              <a href="https://wa.me/qr/EB3O5S47B26BP1" target="_blank" rel="noopener noreferrer" class="round-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6L3 21Z" />
+                  <path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2L9 9.5Z" />
+                </svg>
+              </a>
+              <a href="https://t.me/ivasemi23511" target="_blank" rel="noopener noreferrer" class="round-link" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 4 3 11l5 2 2 6 3-4 5 4 3-15Z" />
+                  <path d="m8 13 9-6" />
+                </svg>
+              </a>
+              <a href="https://max.ru/u/f9LHodD0cOJHkOYwT7DC9K7MEqf3XXFKenL-MmTLywdZU7WMPBVFYaskgpA" target="_blank" rel="noopener noreferrer" class="round-link" aria-label="Max">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  <path d="M8 14V9l4 3 4-3v5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="hero__script" aria-hidden="true">Делаю<br>на совесть</p>
+        <div class="hero__counter" aria-hidden="true"><span>↑</span><b>01 / 03</b><span>↓</span></div>
+      </div>
+    </section>
+
+   
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Услуги</p>
+            <h2 class="section__title">Что я делаю</h2>
+          </div>
+          <a href="#contacts" class="link-more">Все услуги →</a>
+        </div>
+
+        <div class="services">
+          <article class="card service">
+            <svg class="service__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 14 24 6l16 8v6L24 28 8 20v-6Z" />
+              <path d="M8 20v14l16 8 16-8V20" />
+              <path d="M24 28v14" />
+            </svg>
+            <span class="service__num">01</span>
+            <h3>Металлоконструкции</h3>
+            <p>Каркасы, стеллажи, ворота, лестницы, навесы и многое другое.</p>
+          </article>
+          <article class="card service">
+            <svg class="service__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m34 6 8 8-4 4-8-8 4-4Z" />
+              <path d="m30 10-20 20c-2 2-2 5 0 7s5 2 7 0l20-20" />
+              <path d="m8 40 5-5" />
+            </svg>
+            <span class="service__num">02</span>
+            <h3>Сварочные работы</h3>
+            <p>MIG/MAG, TIG, MMA. Работа с чёрным и нержавеющим металлом.</p>
+          </article>
+          <article class="card service">
+            <svg class="service__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M30 6a10 10 0 0 0-9 14L6 35a4 4 0 0 0 7 7l15-15a10 10 0 0 0 14-9l-6 6-6-2-2-6 6-6Z" />
+            </svg>
+            <span class="service__num">03</span>
+            <h3>Ремонт</h3>
+            <p>Восстановление металлических деталей, пострадавших от износа или коррозии.</p>
+          </article>
+          <article class="card service">
+            <svg class="service__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M24 4 42 13v22L24 44 6 35V13L24 4Z" />
+              <path d="m6 13 18 9 18-9" />
+              <path d="M24 22v22" />
+            </svg>
+            <span class="service__num">04</span>
+            <h3>Изделия на заказ</h3>
+            <p>По вашему эскизу, фото или размерам. Любые сложные задачи.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section--alt" id="works">
+      <div class="container works">
+        <div class="works__intro">
+          <p class="eyebrow">Портфолио</p>
+          <h2 class="section__title">Мои работы</h2>
+          <p class="works__text">Здесь вы можете увидеть реальные примеры моих работ. Каждый проект — это внимание к
+            деталям, прочность и аккуратность.</p>
+          <a href="#contacts" class="btn btn--ghost">Смотреть все работы <span aria-hidden="true">→</span></a>
+          <p class="works__script" aria-hidden="true">Металл —<br>это<br>про надёжность</p>
+        </div>
+
+        
+        <div class="gallery">
+          <div class="ph gallery__hero" style="--img:url('img/ac-stands.jpg')" role="img"
+            aria-label="Металлические рамы и подставки под климатическую технику"></div>
+          <div class="ph gallery__a" style="--img:url('img/pool-ladder.jpg')" role="img"
+            aria-label="Купель со стальной лестницей"></div>
+          <div class="ph gallery__b" style="--img:url('img/tube-weld.jpg')" role="img"
+            aria-label="Полированный сварной узел из нержавеющей стали"></div>
+          <div class="ph gallery__c" style="--img:url('img/keg.jpg')" role="img"
+            aria-label="Кега с аккуратным аргонным швом"></div>
+          <div class="ph gallery__d" style="--img:url('img/pool.jpg')" role="img"
+            aria-label="Купель с металлическим поручнем"></div>
+          <div class="ph gallery__e" style="--img:url('img/grill.jpg')" role="img"
+            aria-label="Стальная решётка для гриля"></div>
+          <div class="ph gallery__f" style="--img:url('img/masher.jpg')" role="img"
+            aria-label="Давилка для картофеля из нержавейки"></div>
+          <div class="ph gallery__g" style="--img:url('img/mixer.jpg')" role="img"
+            aria-label="Лопасть миксера из нержавеющей стали"></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="ph ph--master about__photo" style="--img:url('img/ivan-kostik.jpg')" role="img"
+          aria-label="Мастер Иван Костик в мастерской"></div>
+
+        <div class="about__body">
+          <p class="eyebrow">О мастере</p>
+          <h2 class="section__title section__title--sm">Работаю с металлом не первый год</h2>
+          <p>Меня зовут Иван. Занимаюсь сварочными работами и изготовлением металлоконструкций в своей мастерской.</p>
+          <p>Берусь как за небольшие сварочные работы, так и за изготовление изделий по индивидуальным размерам. Цена,
+            качество, аккуратность и своё дело.</p>
+          <ul class="checks">
+            <li>Работаю сам</li>
+            <li>Согласовываю всё до начала работы</li>
+            <li>Изготовление под конкретную задачу</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section--alt" id="process">
+      <div class="container process">
+        <div class="process__intro">
+          <p class="eyebrow">Как я работаю</p>
+          <h2 class="section__title section__title--sm">От идеи до готового изделия</h2>
+          <p>Простой и понятный процесс. Вы всегда в курсе, на каком этапе находится ваш заказ.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="ph ph--draft" style="--img:url('img/details/chertezh.jpg')" role="img"
+              aria-label="Чертёж будущего изделия при обсуждении задачи"></div>
+            <span class="step__num">01</span>
+            <h3>Обсуждение</h3>
+            <ul>
+              <li>Ваша задача</li>
+              <li>Чертёж / фото / эскиз</li>
+              <li>Материалы и сроки</li>
+            </ul>
+          </li>
+          <li class="step">
+            <div class="ph ph--pipes" style="--img:url('img/details/podgotovka.jpg')" role="img"
+              aria-label="Подготовка и резка металла для заготовки"></div>
+            <span class="step__num">02</span>
+            <h3>Подготовка</h3>
+            <ul>
+              <li>Замеры</li>
+              <li>Расчёт материалов</li>
+              <li>Согласование цены</li>
+            </ul>
+          </li>
+          <li class="step">
+            <div class="ph ph--spark" style="--img:url('img/details/izgotovlenie.jpg')" role="img"
+              aria-label="Сварщик выполняет сварку изделия"></div>
+            <span class="step__num">03</span>
+            <h3>Изготовление</h3>
+            <ul>
+              <li>Резка</li>
+              <li>Сварка</li>
+              <li>Обработка</li>
+            </ul>
+          </li>
+          <li class="step">
+            <div class="ph ph--table" style="--img:url('img/details/gotovoe-izdelit.jpg')" role="img"
+              aria-label="Готовое изделие — результат работы"></div>
+            <span class="step__num">04</span>
+            <h3>Готово</h3>
+            <ul>
+              <li>Контроль качества</li>
+              <li>Упаковка / доставка</li>
+              <li>Готовое изделие у вас</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+   
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Галерея</p>
+            <h2 class="section__title">Фотографии работ</h2>
+          </div>
+        </div>
+
+        <div class="gslider">
+          <button class="gslider__arrow gslider__arrow--prev" id="gslider-prev" type="button" aria-label="Назад">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+
+         
+          <div class="gslider__viewport" id="gslider-viewport">
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-01.jpg')" role="img"
+              aria-label="Фото работы 1"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-02.jpg')" role="img"
+              aria-label="Фото работы 2"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-03.jpg')" role="img"
+              aria-label="Фото работы 3"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-04.jpg')" role="img"
+              aria-label="Фото работы 4"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-05.jpg')" role="img"
+              aria-label="Фото работы 5"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-06.jpg')" role="img"
+              aria-label="Фото работы 6"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-07.jpg')" role="img"
+              aria-label="Фото работы 7"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-08.jpg')" role="img"
+              aria-label="Фото работы 8"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-09.jpg')" role="img"
+              aria-label="Фото работы 9"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-10.jpg')" role="img"
+              aria-label="Фото работы 10"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-11.jpg')" role="img"
+              aria-label="Фото работы 11"></div>
+            <div class="gslider__slide ph" style="--img:url('img/slider/slide-12.jpg')" role="img"
+              aria-label="Фото работы 12"></div>
+          </div>
+
+          <button class="gslider__arrow gslider__arrow--next" id="gslider-next" type="button" aria-label="Вперёд">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="cta" id="contacts">
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <p class="eyebrow">Готов обсудить заказ</p>
+          <h2 class="section__title">Нужно что-то <span>сварить?</span></h2>
+          <p>Отправьте фото или эскиз — обсудим задачу и стоимость.</p>
+        </div>
+
+        <div class="cta__helmet" aria-hidden="true">
+          <svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M22 70c0-30 24-54 58-54s58 24 58 54v14a8 8 0 0 1-8 8H30a8 8 0 0 1-8-8V70Z" />
+            <path d="M34 62h92v18a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6V62Z" fill="rgba(90,110,255,.18)" />
+            <path d="M60 16c3-8 12-12 20-12s17 4 20 12" />
+          </svg>
+        </div>
+
+        <a href="https://t.me/ivasemi23511" target="_blank" rel="noopener noreferrer" class="btn btn--primary cta__btn">Написать мастеру <span
+            aria-hidden="true">✈</span></a>
+
+        <ul class="contacts">
+          <li>
+            <span class="contacts__icon" aria-hidden="true">☎</span>
+            <span><small>WhatsApp</small><a href="https://wa.me/qr/EB3O5S47B26BP1" target="_blank" rel="noopener noreferrer">+7 (999) 123-45-67</a></span>
+          </li>
+          <li>
+            <span class="contacts__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 4 3 11l5 2 2 6 3-4 5 4 3-15Z" />
+                <path d="m8 13 9-6" />
+              </svg>
+            </span>
+            <span><small>Telegram</small><a href="https://t.me/ivasemi23511" target="_blank" rel="noopener noreferrer">@ivasemi23511</a></span>
+          </li>
+          <li>
+            <span class="contacts__icon" aria-hidden="true">M</span>
+            <span><small>Max</small><a href="https://max.ru/u/f9LHodD0cOJHkOYwT7DC9K7MEqf3XXFKenL-MmTLywdZU7WMPBVFYaskgpA" target="_blank" rel="noopener noreferrer">Написать в Max</a></span>
+          </li>
+          <li>
+            <span class="contacts__icon" aria-hidden="true">✆</span>
+            <span><small>Звонок</small><a href="tel:+79991234567">+7 (999) 123-45-67</a></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+ 
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo">
+        <svg class="logo__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M10 26c0-9 6-16 14-16s14 7 14 16v8a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4v-8Z" />
+          <path d="M14 22h20v8a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3v-8Z" />
+          <path d="M18 10c1-3 4-5 6-5s5 2 6 5" />
+        </svg>
+        <span class="logo__text"><strong>Сварщик</strong><small>Металл. Надёжность. Результат.</small></span>
+      </a>
+
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <a href="#top">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#about">О мастере</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="footer__side">
+        <div class="socials">
+          <a href="#" aria-label="ВКонтакте">VK</a>
+          <a href="https://t.me/ivasemi23511" target="_blank" rel="noopener noreferrer" aria-label="Telegram">TG</a>
+          <a href="https://max.ru/u/f9LHodD0cOJHkOYwT7DC9K7MEqf3XXFKenL-MmTLywdZU7WMPBVFYaskgpA" target="_blank" rel="noopener noreferrer" aria-label="Max">MX</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+        <p>© 2026. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
