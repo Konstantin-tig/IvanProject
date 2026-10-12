@@ -598,7 +598,7 @@ img {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 14px;
+  gap: 0px;
 }
 
 .gslider__viewport {
