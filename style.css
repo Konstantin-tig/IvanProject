@@ -1,11 +1,11 @@
 /* ===== Переменные ===== */
 :root {
-  --bg: #ff00ee;
+  --bg: #0a0b0d;
   --bg-alt: #0e1013;
   --card: #111317;
   --line: rgba(255, 255, 255, 0.09);
   --orange: #ff7a1a;
-  --orange-dark: #ff8902;
+  --orange-dark: #e9660a;
   --text: #eceef0;
   --muted: #9aa0a8;
   --blue-spark: #6b7cff;
@@ -598,7 +598,7 @@ img {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 0px;
+  gap: 14px;
 }
 
 .gslider__viewport {
